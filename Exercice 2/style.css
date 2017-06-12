@@ -1,0 +1,87 @@
+body {
+	background: linear-gradient(to left, black, gray);
+}
+
+.arrondi {
+	margin-top: 2em;
+	margin-left: 2em;
+	height: 5em;
+	width: 5em;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 20%;
+	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 40%;
+	background: radial-gradient(red, yellow);
+}
+
+.arrondi:hover {
+	background: radial-gradient(purple, blue);
+}
+
+.arrondi:active {
+	background: radial-gradient(green, white);
+	border: 5px solid #ffd700;
+}
+
+.center {
+	border: 5px solid #008CBA;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 5%;
+	background-color: #008CBA;
+}
+
+.submit, .email, .password {
+	text-align: center;
+}
+
+input {
+	border: none;
+	background-color: #01C0FF;
+
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #001578;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #001578;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #001578;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #001578;
+}
+
+input[type=text] {
+	border: 1px solid #001578;
+	transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+	color: #0431FF;
+	border: 1px solid #001578;
+}
+
+input[type=password] {
+	border: 1px solid #001578;
+}
+
+input[type=submit] {
+	color: #001578;
+	border: 1px solid #001578;
+}
+
+input[type=submit]:hover {
+	background-color: #008CBA;
+	border: 1px solid #001578;
+	border-radius: 10%;
+}
+
+form {
+	margin: 0.5em;
+	border: ;
+}

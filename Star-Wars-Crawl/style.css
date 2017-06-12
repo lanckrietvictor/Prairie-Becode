@@ -1,0 +1,79 @@
+@font-face {
+	font-family: starwars;
+	src: url(".../Documents/Star-Wars-Crawl/starjedi/Starjedi.ttf");
+}
+
+body {
+	background-image: url(http://cdn.wallpapersafari.com/28/12/DLBhxn.jpg); /*Starry background*/
+}
+
+@keyframes intro {
+	0% {opacity: 1;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.intro {
+	color: rgb(55, 124, 123);
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+	animation: intro 10s linear 1 forwards;
+}
+
+@keyframes logo {
+	0% {
+		visibility: visible;
+	}
+	0.000001% {
+		transform: scale(1);
+	}
+	99.9999% {
+		transform: scale(0);
+	}
+	100% {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+	}
+}
+
+.BeCode {
+	border: solid 1px yellow;
+	border-radius: 10%;
+	width: 40em;
+	height: 40em;
+	background-image: url(http://register.becode.org/partners/images/SmallLogo.png);
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	animation: logo 10s linear 6s 1 forwards;
+}
+
+@keyframes crawl {
+	0% {transform: translateY(80%);}
+	100% {transform: translateY(-160%);}
+}
+
+.mainText {
+	max-width: 40em;
+	height: auto;
+	color: #F3DB31; /*color of letters*/
+	font-family: 'starwars' sans-serif; /*star wars font*/
+	font-size: 40px;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	transform: perspective(2500px) rotateX(30deg);
+	position: relative;
+	top: 0;
+}
+
+.mainText p {
+	transform: translateY(-20%);
+	animation: crawl 15s linear 6s 1;
+}
+
+
